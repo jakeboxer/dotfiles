@@ -6,10 +6,10 @@ require 'what_methods'# gem install what_methods
 require 'pp'
 
 # Test Hash
-h = { :one => 'sup', :two => 'nmu' }
+th = { :one => 'sup', :two => 'nmu' }
 
 # Test Array
-a = [2, 4, 6, 8]
+ta = [2, 4, 6, 8]
 
 # Method to pretty-print object methods
 # Coded by sebastian delmont
