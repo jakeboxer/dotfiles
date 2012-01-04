@@ -10,6 +10,7 @@ PS1="\[\e[1;37m\]\w\[\e[0;37m\]\`cmdRes=\$? && echo -en \"\$(__git_ps1) \" && if
 
 # GitHub
 alias gh='cd /Volumes/GitHub/github/'
+alias ghh='cd /Volumes/GitHub/github_help/'
 
 ### CINDERELLA ###
 
