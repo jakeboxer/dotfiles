@@ -12,6 +12,10 @@ PS1="\[\e[1;37m\]\w\[\e[0;37m\]\`cmdRes=\$? && echo -en \"\$(__git_ps1) \" && if
 alias gh='cd /Volumes/GitHub/github/'
 alias gd='cd /Volumes/GitHub/docs/'
 
+# Ruby
+alias be='bundle exec'
+alias ber='bundle exec rake'
+
 ### CINDERELLA ###
 
 source /Users/jake/Developer/cinderella.profile
