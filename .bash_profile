@@ -1,3 +1,6 @@
+### gh-setup ###
+source /opt/github/env.sh
+
 # Get the name of the current git branch
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
@@ -23,10 +26,6 @@ alias ght='cd ~/github/team/'
 # Ruby
 alias be='bundle exec'
 alias ber='bundle exec rake'
-
-### gh-setup ###
-
-source /opt/github/env.sh
 
 ### bash completion ###
 
