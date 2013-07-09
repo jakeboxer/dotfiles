@@ -2,16 +2,16 @@
 // are overridden in turn by file type specific settings.
 {
     // Visual stuff
-    "font_face": "Inconsolata",
-    "font_size": 16,
-    "tab_size": 2,
-    "theme": "Soda Dark.sublime-theme",
+	"font_face": "Inconsolata",
+	"font_size": 16,
+	"theme": "Soda Dark.sublime-theme",
+	"tab_size": 2,
 
-    // Whitespace stuff
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
+	// Whitespace stuff
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 
-    // Vintage mode stuff
-    "ignored_packages": [],
-    "vintage_start_in_command_mode": true
+	// Vintage mode stuff
+	"ignored_packages": [],
+	"vintage_start_in_command_mode": true
 }
