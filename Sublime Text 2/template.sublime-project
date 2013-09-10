@@ -1,13 +1,13 @@
 {
-	"folders":
-	[
-		{
-			"path": "/Users/jake/github/template",
+  "folders":
+  [
+    {
+      "path": "/Users/jake/github/template",
       "folder_exclude_patterns": [
         ".bundle",
         "tmp",
         "vendor/cache"
       ]
-		}
-	]
+    }
+  ]
 }
