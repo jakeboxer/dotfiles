@@ -1,5 +1,5 @@
 ### gh-setup ###
-source /opt/github/env.sh
+source /opt/boxen/env.sh
 
 # Get the name of the current git branch
 function parse_git_branch {
