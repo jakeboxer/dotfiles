@@ -38,3 +38,4 @@ PS1="\[\e[1;37m\]\w\[\e[0;37m\]\`cmdRes=\$? && echo -en \"\$(__git_ps1) \" && if
 
 # Exports
 export EDITOR='subl -w'
+export PATH=$PATH:$HOME/bin
