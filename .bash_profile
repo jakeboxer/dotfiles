@@ -35,3 +35,6 @@ fi
 
 # Fancy-Colors, GIT-Branch-Name and Success State of last command (with fancy utf8 symbols)
 PS1="\[\e[1;37m\]\w\[\e[0;37m\]\`cmdRes=\$? && echo -en \"\$(__git_ps1) \" && if [ \$cmdRes = 0 ]; then echo -en '\[\e[1;32m\]✔ '; else echo -en '\[\e[1;31m\]✘ '; fi\`\[\e[1;37m\]\$ \[\e[m\]"
+
+# Exports
+export EDITOR='subl -w'
