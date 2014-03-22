@@ -2,10 +2,14 @@
 // are overridden in turn by file type specific settings.
 {
   // Visual stuff
-  "font_face": "Inconsolata",
+  "fold_buttons": false,
+  "font_face": "Ubuntu Mono",
+  "font_options": ["subpixel_antialias"],
   "font_size": 16,
-  "theme": "Soda Dark.sublime-theme",
+  "highlight_line": true,
+  "rulers": [80],
   "tab_size": 2,
+  "theme": "Soda Dark.sublime-theme",
 
   // Whitespace stuff
   "translate_tabs_to_spaces": true,
@@ -13,5 +17,10 @@
 
   // Vintage mode stuff
   "ignored_packages": [],
-  "vintage_start_in_command_mode": true
+  "vintage_start_in_command_mode": true,
+
+  // Filesystem stuff
+  "folder_exclude_patterns": [
+    ".svn", ".git", ".hg", "CVS", "_build", "dist", "build", "site"
+  ]
 }
