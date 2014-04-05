@@ -1,20 +1,10 @@
-### gh-setup ###
+### boxen ###
+
 source /opt/boxen/env.sh
 
-# Get the name of the current git branch
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
-}
+### PATH STUFF ###
 
-# Clean all files ending in .orig
-function git-clean-orig {
-  git status -su | grep -e"\.orig$" | cut -f2 -d" " | xargs rm
-}
-
-# Show all files ending in .orig
-function git-show-orig {
-  git status -su | grep -e"\.orig$" | cut -f2 -d" "
-}
+PATH=~/bin:$PATH
 
 ### ALIASES ###
 
@@ -22,10 +12,18 @@ function git-show-orig {
 alias gh='cd ~/github/github/'
 alias ghh='cd ~/github/help/'
 alias ght='cd ~/github/team/'
+alias gh-console='ssh -t github-staff2-cp1-prd.iad.github.net gh-console'
+alias gh-dbconsole='ssh -t github-staff2-cp1-prd.iad.github.net gh-dbconsole'
+alias gh-ssh='ssh -t github-staff2-cp1-prd.iad.github.net'
+alias gitsh="gitsh --git $(which hub)"
 
-# Ruby
-alias be='bundle exec'
-alias ber='bundle exec rake'
+# Bundle/vendoring stuff
+alias b="bundle"
+alias bi="b install --path vendor"
+alias bil="bi --local"
+alias bu="b update"
+alias be="b exec"
+alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
 ### bash completion ###
 
@@ -33,9 +31,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
-# Fancy-Colors, GIT-Branch-Name and Success State of last command (with fancy utf8 symbols)
-PS1="\[\e[1;37m\]\w\[\e[0;37m\]\`cmdRes=\$? && echo -en \"\$(__git_ps1) \" && if [ \$cmdRes = 0 ]; then echo -en '\[\e[1;32m\]✔ '; else echo -en '\[\e[1;31m\]✘ '; fi\`\[\e[1;37m\]\$ \[\e[m\]"
+# Fancy-Colors and Success State of last command (with fancy utf8 symbols)
+PS1="\[\e[1;37m\]\w\[\e[0;37m\] \`cmdRes=\$? && if [ \$cmdRes = 0 ]; then echo -en '\[\e[1;32m\]✔ '; else echo -en '\[\e[1;31m\]✘ '; fi\`\[\e[1;37m\]\$ \[\e[m\]"
 
-# Exports
-export EDITOR='subl -w'
-export PATH=$PATH:$HOME/bin
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
