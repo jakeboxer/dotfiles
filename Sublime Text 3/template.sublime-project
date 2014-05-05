@@ -1,13 +1,18 @@
 {
-  "folders":
-  [
-    {
-      "path": "/Users/jake/github/template",
+	"folders": [
+		{
+			"path": "/Users/<username>/github/<reponame>",
       "folder_exclude_patterns": [
         ".bundle",
+        "/Users/<username>/github/github/repositories",
         "tmp",
         "vendor/cache"
       ]
-    }
-  ]
+		}
+	],
+
+  "settings": {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+  }
 }
