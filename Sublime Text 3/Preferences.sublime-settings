@@ -1,6 +1,7 @@
 // Settings in here override those in "Default/Preferences.sublime-settings", and
 // are overridden in turn by file type specific settings.
 {
+  "auto_complete_commit_on_tab": false,
   "bold_folder_labels": true,
   "color_scheme": "Packages/User/Monokai (SL).tmTheme",
   "fold_buttons": false,
