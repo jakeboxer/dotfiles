@@ -1,0 +1,29 @@
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+	excludesfile = /Users/jakeboxer/.gitignore_global
+	editor = subl -n -w
+[user]
+	name = Jake Boxer
+	email = jake@github.com
+[push]
+	default = current
+[github]
+	user = jakeboxer
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[merge]
+	tool = opendiff
+[status]
+	short = 0
+	branch = 1
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
