@@ -1,0 +1,6 @@
+.DS_Store
+test/fixtures/misc/utf*
+*.sublime-project
+*.sublime-workspace
+.go-version
+.ruby-version
