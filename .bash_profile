@@ -4,7 +4,7 @@ source /opt/boxen/env.sh
 
 ### PATH STUFF ###
 
-PATH=~/bin:$PATH
+export PATH=~/bin:$PATH
 
 ### ALIASES ###
 
@@ -16,6 +16,7 @@ alias gh-console='ssh -t github-staff2-cp1-prd.iad.github.net gh-console'
 alias gh-dbconsole='ssh -t github-staff2-cp1-prd.iad.github.net gh-dbconsole'
 alias gh-ssh='ssh -t github-staff2-cp1-prd.iad.github.net'
 alias gitsh="gitsh --git $(which hub)"
+alias prep="script/bootstrap && rake db:migrate && rake test:setup"
 
 # Bundle/vendoring stuff
 alias b="bundle"
