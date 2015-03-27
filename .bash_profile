@@ -1,10 +1,10 @@
-### boxen ###
-
-source /opt/boxen/env.sh
-
 ### PATH STUFF ###
 
 export PATH=~/bin:$PATH
+
+### DEFAULT PROGRAMS
+
+export EDITOR='subl -w'
 
 ### ALIASES ###
 
@@ -26,14 +26,12 @@ alias bu="b update"
 alias be="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
-### bash completion ###
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
 # Fancy-Colors and Success State of last command (with fancy utf8 symbols)
 PS1="\[\e[1;37m\]\w\[\e[0;37m\] \`cmdRes=\$? && if [ \$cmdRes = 0 ]; then echo -en '\[\e[1;32m\]✔ '; else echo -en '\[\e[1;31m\]✘ '; fi\`\[\e[1;37m\]\$ \[\e[m\]"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### boxen ###
+
+source /opt/boxen/env.sh
