@@ -11,8 +11,7 @@
     "CVS",
     "_build",
     "dist",
-    "build",
-    "site"
+    "build"
   ],
   "font_face": "Ubuntu Mono",
   "font_options":
