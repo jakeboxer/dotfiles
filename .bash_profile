@@ -6,10 +6,6 @@ export PATH=~/bin:$PATH
 
 export EDITOR='subl -w'
 
-### OTHER ENV VARIABLES ###
-
-export HOMEBREW_GITHUB_API_TOKEN='97dd0d7fb6aeb6bac96b63456dc768405e2e718c'
-
 ### VI MODE BY DEFAULT ###
 set -o vi
 
