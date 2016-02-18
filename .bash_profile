@@ -2,9 +2,16 @@
 
 export PATH=~/bin:$PATH
 
-### DEFAULT PROGRAMS
+### DEFAULT PROGRAMS ###
 
 export EDITOR='subl -w'
+
+### OTHER ENV VARIABLES ###
+
+export HOMEBREW_GITHUB_API_TOKEN='97dd0d7fb6aeb6bac96b63456dc768405e2e718c'
+
+### VI MODE BY DEFAULT ###
+set -o vi
 
 ### ALIASES ###
 
@@ -16,7 +23,7 @@ alias gh-console='ssh -t github-staff2-cp1-prd.iad.github.net gh-console'
 alias gh-dbconsole='ssh -t github-staff2-cp1-prd.iad.github.net gh-dbconsole'
 alias gh-ssh='ssh -t github-staff2-cp1-prd.iad.github.net'
 alias gitsh="gitsh --git $(which hub)"
-alias prep="script/bootstrap && rake db:migrate && rake test:setup"
+alias prep="script/bootstrap && ./bin/rake db:migrate test:setup"
 
 # Bundle/vendoring stuff
 alias b="bundle"
@@ -31,7 +38,3 @@ PS1="\[\e[1;37m\]\w\[\e[0;37m\] \`cmdRes=\$? && if [ \$cmdRes = 0 ]; then echo -
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-### boxen ###
-
-source /opt/boxen/env.sh
