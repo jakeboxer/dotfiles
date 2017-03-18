@@ -33,7 +33,6 @@
   - [x] Copy over installed Dash packages
   - [x] Copy over Adium themes and accounts
   - [x] Copy selected Fantastical calendars
-  - [x] Copy chat rooms into GitHub Chat
   - [x] Copy over iTerm 2 themes/settings
   - [x] Copy over Paw API settings
 - [x] Install gitsh https://github.com/thoughtbot/gitsh
