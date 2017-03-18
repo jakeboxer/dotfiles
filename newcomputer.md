@@ -35,9 +35,10 @@
   - [x] Copy selected Fantastical calendars
   - [x] Copy chat rooms into GitHub Chat
   - [x] Copy over iTerm 2 themes/settings
+  - [x] Copy over Paw API settings
 - [x] Install gitsh https://github.com/thoughtbot/gitsh
 - [x] Organize launch bar
-- [x] Turn off text replacement (smart quotes) in Messages.app
+- [x] Turn off text replacement (smart quotes) in Settings > Keyboard > Text
 - [x] Turn off autocorrect
 
 ### Other work stuff
